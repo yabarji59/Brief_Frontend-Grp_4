@@ -5,8 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './composants/header/header.component';
 import { UserComponent } from './composants/user/user.component';
-
-
+import  {HttpClientModule,HttpClient} from "@angular/common/http";
+import { UserService } from './services/user.service';
+ 
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,9 +17,9 @@ import { UserComponent } from './composants/user/user.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,HttpClientModule
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
