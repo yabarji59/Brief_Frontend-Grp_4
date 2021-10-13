@@ -1,0 +1,11 @@
+
+
+<div class="card w-75" *ngFor="let users of Users">
+    <div class="card-body">
+        <img src= "{{users.picture.thumbnail}}"  class="img-thumbnail">
+      <h5 class="card-title">{{users.name.first}}  {{users.name.last}}</h5>
+      <p class="card-text">{{users.email}}</p>
+      
+    </div>
+  </div>
+
