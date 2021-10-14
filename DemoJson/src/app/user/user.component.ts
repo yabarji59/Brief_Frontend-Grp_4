@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import sampleData from './data.json';
 import { UserService } from 'src/app/services/user.service'
-import { Router, RouterModule } from '@angular/router';
+import { Router,ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-user',
   templateUrl: './user.component.html',
@@ -10,14 +10,14 @@ import { Router, RouterModule } from '@angular/router';
 export class UserComponent implements OnInit {
   Users:any = sampleData; 
   Utilisateurs : Array<any>=[];
- 
+  name : String ='';
 
-  constructor( private userService :UserService, private router : Router) { }
+  constructor( private userService :UserService, private route: ActivatedRoute ,private router : Router) { }
 
   ngOnInit(): void {
     
     this.Utilisateurs=this.userService.getUsers();
-   
+  
    
   }
 
@@ -29,11 +29,5 @@ addsvg(age:number) : any {
   else {
     return "\rookie.svg";
   }
-}
-
-affichedetail():void {
-  console.log("afficher page")
-  this.router.navigate(['/userdetails']); 
-  
 }
 }
