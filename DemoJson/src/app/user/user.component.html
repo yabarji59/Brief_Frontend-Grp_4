@@ -1,11 +1,30 @@
 
 
-<div class="card w-75" *ngFor="let users of Users">
-    <div class="card-body">
-        <img src= "{{users.picture.thumbnail}}"  class="img-thumbnail">
-      <h5 class="card-title">{{users.name.first}}  {{users.name.last}}</h5>
-      <p class="card-text">{{users.email}}</p>
+<div class="card "   *ngFor="let users of Users" >
+    
+   
+
+    <section class="form my-5 mx-2">
       
-    </div>
+      <div class="container">
+        <div class="row no-gutters">
+          <div class="col-lg-5 px-7">
+            <img src= "{{users.picture.thumbnail}}"  class="img-thumbnail">
+          </div>
+          <div class="col-lg-7 px-5 pt-5">
+            <h1 class="font-weight-bold py">{{users.name.first}}  {{users.name.last}}</h1>
+            <h4>{{users.email}}</h4>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
   </div>
 
+
+  
+  
