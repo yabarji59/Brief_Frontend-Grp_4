@@ -9,11 +9,12 @@ export interface User{
     city : string;
     state : string;
     country : string;
-    postcode : Number;
+    postcode : string;
     login : Login;
     timezone:Timezone;
-    phone : Number;
-    cell : Number ;
+    phone : string;
+    cell : string ;
+    location : Location;
 }
 export interface Name{
     title: string;
@@ -26,13 +27,13 @@ export interface Picture{
     large : string;
 }
 export interface Dob{
-    date: number;
+    date: string;
     age: number;
 }
 
 
 export interface Registred{
-    date : number; 
+    date : string; 
     age : number;
 }
 
@@ -49,6 +50,15 @@ export interface Login{
 export interface Timezone{
     offset: string;
     description : string;
+
+}
+export interface Location {
+    street : Street 
+}
+ 
+export interface Street{    // ne pas déclarer le deuxiéme objet !! //
+    number : Number ;
+    name : string;
 
 }
 export interface Result {
