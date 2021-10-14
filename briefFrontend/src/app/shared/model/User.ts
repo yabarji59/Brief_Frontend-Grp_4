@@ -9,7 +9,6 @@ export interface User{
     city : string;
     state : string;
     country : string;
-    postcode : string;
     login : Login;
     timezone:Timezone;
     phone : string;
@@ -53,12 +52,16 @@ export interface Timezone{
 
 }
 export interface Location {
-    street : Street 
+    street : Street;
+    postcode : number;
+
+
 }
  
 export interface Street{    // ne pas déclarer le deuxiéme objet !! //
     number : Number ;
     name : string;
+
 
 }
 export interface Result {

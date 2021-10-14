@@ -19,6 +19,8 @@ export class UsersComponent implements OnInit {
     })
   }
   toDetails(user){
-    this.router.navigate(['../UserDetails'],{queryParams:user});
+    this.userService.saveUser(user);
+    this.router.navigate(['../UserDetails']);
   }
 }
+

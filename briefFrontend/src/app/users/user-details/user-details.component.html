@@ -9,10 +9,11 @@
         <li>Prénom: {{user.name.first}}</li> 
         <li>Email: {{user.email}}</li>
         <li>Genre:{{user.gender}}</li>
-        <li>Adresse:</li>
+        <li>Adresse:{{user.location.street.number}} {{user.location.street.name}}</li>
+        <li>{{user.location.postcode}}</li>
         <li>Numéro de téléphone:{{user.phone}}</li>
         <li>login:{{user.login.username}}</li>
-        <li>Date de naissance: </li>
+        <li>Date de naissance:{{user.dob.date}} </li>
         <li>Age:{{user.dob.age}}</li>
     </ul>
 </div>

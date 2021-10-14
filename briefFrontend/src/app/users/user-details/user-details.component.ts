@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { User } from 'src/app/shared/model/User';
+import { UserService } from 'src/app/shared/services/user.service';
 
 @Component({
   selector: 'app-user-details',
@@ -8,14 +9,11 @@ import { User } from 'src/app/shared/model/User';
   styleUrls: ['./user-details.component.css']
 })
 export class UserDetailsComponent implements OnInit {
-  user: any;
-  constructor(private router : ActivatedRoute) { }
+  user: User;
+  constructor(private router : ActivatedRoute, private userService: UserService) { }
 
   ngOnInit(): void {
-    this.router.queryParams.subscribe((user) =>{
-      this.user = user;
-      console.log(this.user)
-    });
+    this.user = this.userService.getUser();
   }
 
 }
