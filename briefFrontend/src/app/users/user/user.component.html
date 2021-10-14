@@ -1,1 +1,18 @@
-<p>user works!</p>
+
+<div class="Photo">
+    <img src="{{user.picture.thumbnail}}">
+</div>
+<div class="infos_perso">
+    <ul>
+        <li>Nom: {{user.name.last}}</li>
+        <li>Prénom: {{user.name.first}}</li>
+        <li>Email: {{user.email}}</li>
+    </ul>
+</div>
+<div class="icones">
+    <img class="icones_user" *ngIf="user.dob.age<40" src="../../../assets/Icon_User/rookie.svg" />
+    <img class="icones_user" *ngIf="user.dob.age>60" src="../../../assets/Icon_User/expert.svg" />
+    <img class="icones_user" *ngIf="user.dob.age>=40 && user.dob.age<=60" src="../../../assets/Icon_User/advance.svg" />
+
+</div>
+

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { User } from 'src/app/shared/model/User';
 
 @Component({
   selector: 'app-user',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserComponent implements OnInit {
 
+  @Input() user: User;      // récupération de l'utilisateur du parent // 
   constructor() { }
 
   ngOnInit(): void {
   }
 
 }
+

@@ -1,0 +1,8 @@
+.icones_user{
+    display: flex;
+    position: relative;
+    width: 75px;
+    float: right;
+    flex-wrap: wrap;
+
+}

@@ -1,5 +1,3 @@
-
-<div *ngFor="let t of list">
-    <app-user></app-user>
+<div *ngFor="let user of list">
+    <app-user (click)="toDetails(user)" [user]="user"></app-user> 
 </div>
-
