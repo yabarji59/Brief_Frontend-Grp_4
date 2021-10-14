@@ -4,12 +4,16 @@ export interface User{
     picture : Picture;
     dob :  Dob;
     gender : string;
-    registred : registred;
-    coordinates : coordinates;
+    registred : Registred;
+    coordinates : Coordinates;
     city : string;
     state : string;
     country : string;
-    postcode : number;
+    postcode : Number;
+    login : Login;
+    timezone:Timezone;
+    phone : Number;
+    cell : Number ;
 }
 export interface Name{
     title: string;
@@ -27,16 +31,26 @@ export interface Dob{
 }
 
 
-export interface registred{
+export interface Registred{
     date : number; 
     age : number;
 }
 
-export interface coordinates{
+export interface Coordinates{
     latitude : string;
     longitude : string;
 }
 
+export interface Login{
+    uuid : string; 
+    username : string;
+
+}
+export interface Timezone{
+    offset: string;
+    description : string;
+
+}
 export interface Result {
     results: User[];
 }
