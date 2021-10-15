@@ -1,16 +1,8 @@
-*{
 
-    padding: 0;
-    margin:0;
-    box-sizing: border-box;
-  }
-  body{
-    padding: 0;
-  }
   .row{
-    background: rgb(255, 255, 255);
+    background: rgb(226, 186, 186);
     border-radius :30px;
-    box-shadow: 12px 12px 22px grey;
+    box-shadow: 12px 12px 22px rgb(121, 128, 148);
   }
 
 
@@ -29,5 +21,7 @@
     float:right;
     margin: center;
     }
-
+.card{
+    background-color:rgb(255, 255, 255);  
+}
     
