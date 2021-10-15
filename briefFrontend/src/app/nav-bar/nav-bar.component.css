@@ -1,13 +1,14 @@
 .nav-bar{
-    background-color: black;
-    height:40px;
+    background-color: rgb(96, 32, 119);
+    height:80px;
     margin-bottom: 40px;
+   
 }
 h2{
     text-align: center;
     color:white;
     margin-bottom:auto;
-    padding-top: 5px;
+    padding-top: 25px;
    
 }
 

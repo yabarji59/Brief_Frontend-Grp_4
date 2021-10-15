@@ -1,11 +1,16 @@
 .infos_perso_details{
+    display: flex;
     font-size: 25px;
-    margin-left: 30%;
+    margin-left: 20%;
     margin-right: 20%;
-background-color: rgb(236, 236, 236);
+    margin-bottom: 10px;
+    background-color: rgb(235, 220, 230);
 border-radius: 10px;
-border: 1px solid #e4e3e3;
-box-shadow: 3px 3px 12px #444444;
+border: 1px solid #4f1272;
+box-shadow: 3px 3px 12px #4f1272;
+
+
+
 
 
 }
@@ -13,5 +18,21 @@ box-shadow: 3px 3px 12px #444444;
 ul{
     list-style:none;
     margin-left: 20px;
+    line-height: 50px;
 
+}
+
+img{
+   width: 30%;
+   height: 30%;
+   margin-top: 100px;
+   border-radius: 50%;
+   border: 1px solid #e4e3e3;
+box-shadow: 3px 3px 12px #4f1272;
+margin-left: 10px;
+}
+.fond{
+    background-color: #ebebeb;
+    
+    
 }
