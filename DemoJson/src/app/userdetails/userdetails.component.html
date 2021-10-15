@@ -1,0 +1,34 @@
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img id="image" src="{{user.picture.large}}" class="img-fluid rounded-start" style="width: max-content;">
+    </div>     
+
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{ user.name.title }} {{ user.name.first }} {{ user.name.last }} Informations :</h5>
+        <img src="../../assets/Icon_User/{{addsvg(user.dob.age)}}" style="width:10%" > 
+        <p class="card-text">
+          <h3>{{ "   age: "}}</h3>
+           <p> {{  user.dob.age}} {{"ans"}}</p>
+           <h3>{{  "Téléphone: "}}</h3>
+           <p>{{  user.phone}}</p>
+       
+          <h3>{{  "Adresse mail : "}}</h3>
+           <p>{{ user.email}}</p>
+          
+           <h3>{{  "Adresse postale : "}}</h3>
+           <p>{{ user.location.street.number}} {{user.location.street.name}}  {{user.location.city}} {{user.location.state}} {{user.location.postcode}}</p>
+         
+        <p class="card-text">
+          
+          <small class="text-muted">Last updated 3 mins ago</small></p>
+          <a [routerLink]="['']">retour</a>
+      </div>
+    </div>
+  </div>
+</div>
+    
+  
+      
+
