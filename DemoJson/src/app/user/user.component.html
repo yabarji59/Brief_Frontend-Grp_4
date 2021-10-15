@@ -1,14 +1,23 @@
 
-  <div class="row" >
-    <div class="col-sm-6"  >
-      <div class="card" *ngFor="let users of Users"  [routerLink] ="['/userdetails',users.login.uuid]" >
-        <div class="card-body">
-            <img src= "{{users.picture.thumbnail}}"  class="img-thumbnail">
-          <h5 class="card-title">{{users.name.first}}  {{users.name.last}}</h5>
-          <p class="card-text">{{users.email}}</p>
-          <img src="../../assets/Icon_User/{{addsvg(users.dob.age)}}" alt="Avatar" style="width: 10%"> 
-      <a ></a>
+<div class="card "   *ngFor="let users of Users" [routerLink] ="['/userdetails',users.login.uuid]" >
+
+  <section class="my-5 mx-5">
+
+    <div class="container">
+      <div class="row ">
+        <div class="col-lg-2 mx-5 my-5">
+          <img src= "{{users.picture.thumbnail}}"  class="img-thumbnail" style="width: 60%;">
         </div>
+        <div class="col-lg-7 px-5 pt-5">
+          <h1 class="font-weight-bold py">{{users.name.first}}  {{users.name.last}}</h1>
+          <h4>{{users.email}}</h4>
+
+          <img class="flotte" src="../../assets/Icon_User/{{addsvg(users.dob.age)}}"  style="width: 20%"> 
+        </div>
+
       </div>
+
     </div>
+
+  </section>
 </div>

@@ -16,9 +16,10 @@ export class UserComponent implements OnInit {
 
   ngOnInit(): void {
     
-    this.Utilisateurs=this.userService.getUsers();
+    //this.Utilisateurs=this.userService.getUsers();
   
-   
+    this.Utilisateurs = <any[]>this.Users;
+    console.log(this.Utilisateurs);
   }
 
 

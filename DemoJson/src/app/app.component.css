@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+
+}
+
+html {
+    font-size: 80%;
+
+}
+
+
+
+
+.container {
+    max-width:1200px;
+    margin: 20px;
+
+}
+
+
+.button .navbar-toggler{
+float: left;
+
+}
+.navbar-brand{
+    text-align: center;
+
+}
+
+.navbar-dark .navbar-brand {
+    color: #fff;
+}
