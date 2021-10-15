@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
   .row{
     background: rgb(226, 186, 186);
     border-radius :30px;
@@ -25,3 +26,34 @@
     background-color:rgb(255, 255, 255);  
 }
     
+=======
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+  }
+  body{
+    background: rgb(219,226,226);
+  }
+  .row{
+    background: rgb(255, 255, 255);
+    border-radius :30px;
+    box-shadow: 12px 12px 22px grey;
+  }
+
+  
+  img{
+    width: 50%;
+    border-radius: 50%;
+   
+  
+  }
+
+  .no-gutters {
+    margin: 80px;
+    padding: 40px;
+    margin-right: 200px;
+    margin-top: 40PX;
+  }
+>>>>>>> d36c9b3c81fe11839abf436f5bb38d06f0bbea17

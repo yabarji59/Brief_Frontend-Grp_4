@@ -1,9 +1,15 @@
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> d36c9b3c81fe11839abf436f5bb38d06f0bbea17
 * {
     box-sizing: border-box;
 
 }
 
 html {
+<<<<<<< HEAD
     font-size: 80%;
 
 }
@@ -15,6 +21,31 @@ html {
     max-width:1200px;
     margin: 20px;
 
+=======
+    font-size: 100%;
+   
+}
+
+body {
+    display: block;
+
+    margin: 0 auto;
+    margin: 0;
+    font-size: 1.6rem;
+    background-color: blue!important;
+}
+
+header {
+    background-color: rgb(236, 45, 24);
+    color: white;
+   
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+   
+>>>>>>> d36c9b3c81fe11839abf436f5bb38d06f0bbea17
 }
 
 
@@ -24,9 +55,13 @@ float: left;
 }
 .navbar-brand{
     text-align: center;
+<<<<<<< HEAD
 
 }
 
 .navbar-dark .navbar-brand {
     color: #fff;
+=======
+    float: right;
+>>>>>>> d36c9b3c81fe11839abf436f5bb38d06f0bbea17
 }
